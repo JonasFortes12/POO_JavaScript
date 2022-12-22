@@ -1,20 +1,20 @@
 export class Cliente{
     nome;
-    #cpf;
-    #rg;
+    _cpf;
+    _rg;
 
     constructor(nome, cpf, rg){
         this.nome = nome
-        this.#cpf = cpf
-        this.#rg = rg
+        this._cpf = cpf
+        this._rg = rg
     }
 
     get cpf(){
-        return this.#cpf
+        return this._cpf
     }
 
     get rg(){
-        return this.#rg
+        return this._rg
     }
 
 
