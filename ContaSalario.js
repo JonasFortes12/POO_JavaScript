@@ -1,6 +1,6 @@
 import { Conta } from "./Conta.js"
 
-export class ContaPoupanca extends Conta{
+export class ContaSalario extends Conta{
 
     constructor(saldoInicial, cliente, agencia){
         super(saldoInicial, cliente, agencia)
@@ -8,10 +8,8 @@ export class ContaPoupanca extends Conta{
 
     //Sobrescrita do método Sacar()
     sacar(valor) {
-        let taxa = 1.02
+        let taxa = 1.01
         return super._sacar(valor, taxa)   
     }
-
-    
 
 }
