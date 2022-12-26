@@ -14,5 +14,9 @@ export class Cliente{
         return this._senha
     }
 
+    autenticar(){
+        return true
+    }
+
 
 }
